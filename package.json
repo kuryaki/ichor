@@ -1,0 +1,31 @@
+{
+  "name": "ichor",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Topic-Based Messaging Queue on top of Redis Streams",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuryaki/ichor.git"
+  },
+  "keywords": [
+    "redis",
+    "streams",
+    "pubsub",
+    "messaging",
+    "queue"
+  ],
+  "author": "David Roncancio <david@roncancio.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuryaki/ichor/issues"
+  },
+  "homepage": "https://github.com/kuryaki/ichor#readme",
+  "dependencies": {
+    "await-to": "^0.1.0",
+    "redis": "^2.8.0"
+  }
+}
