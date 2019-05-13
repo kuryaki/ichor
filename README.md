@@ -1,4 +1,4 @@
-# ichor
+# Ichor
 Topic-Based Messaging Queue on top of Redis Streams
 
 
@@ -12,7 +12,7 @@ const ichor = require('ichor')();
 ichor.publish('your-topic', data);
 ```
 
-see more at [examples](/example/producer.js);
+see more at [examples](/example/producer.js)
 
 ### Consumer
 
@@ -28,7 +28,7 @@ group.consume(async (data) => {
 
 ```
 
-see more at [examples](/example/consumer.js);
+see more at [examples](/example/consumer.js)
 
 
 ## Roadmap
