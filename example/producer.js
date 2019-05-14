@@ -1,8 +1,8 @@
 'use strict';
 
-const Ichor = require('../lib');
+const QStream = require('../lib');
 
-const ichor = Ichor(/** Redis Connection Options see https://github.com/NodeRedis/node_redis#rediscreateclient */);
+const qstream = QStream(/** Redis Connection Options see https://github.com/NodeRedis/node_redis#rediscreateclient */);
 
 const topic = 'countstream'; // TOPIC
 
@@ -11,7 +11,7 @@ let counter = 0;
 // producer
 setInterval(async () => {
 
-    const id = await ichor.publish(topic, { counter });
+    const id = await qstream.publish(topic, { counter });
 
     console.log({ counter, id });
 

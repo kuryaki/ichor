@@ -1,5 +1,5 @@
 {
-  "name": "ichor",
+  "name": "qstream",
   "type": "module",
   "version": "0.0.1",
   "description": "Topic-Based Messaging Queue on top of Redis Streams",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuryaki/ichor.git"
+    "url": "git+https://github.com/kuryaki/qstream.git"
   },
   "keywords": [
     "redis",
@@ -21,9 +21,9 @@
   "author": "David Roncancio <david@roncancio.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kuryaki/ichor/issues"
+    "url": "https://github.com/kuryaki/qstream/issues"
   },
-  "homepage": "https://github.com/kuryaki/ichor#readme",
+  "homepage": "https://github.com/kuryaki/qstream#readme",
   "dependencies": {
     "debug": "^4.1.1",
     "redis": "^2.8.0"

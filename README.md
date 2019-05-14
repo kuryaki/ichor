@@ -1,4 +1,4 @@
-# Ichor
+# QStream
 Topic-Based Messaging Queue on top of Redis Streams
 
 
@@ -7,9 +7,9 @@ Topic-Based Messaging Queue on top of Redis Streams
 ### Producer
 
 ```
-const ichor = require('ichor')();
+const streams = require('redis-streams-topic-queue')();
 
-ichor.publish('your-topic', data);
+streams.publish('your-topic', data);
 ```
 
 see more at [examples](/example/producer.js)
@@ -17,9 +17,9 @@ see more at [examples](/example/producer.js)
 ### Consumer
 
 ```
-const ichor = require('ichor')();
+const streams = require('redis-streams-topic-queue')();
 
-await ichor.group('your-topic', 'group/queue name');
+const group = await streams.group('your-topic', 'group/queue name');
 
 group.consume(async (data) => {
     console.log({ data });
