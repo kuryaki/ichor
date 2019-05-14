@@ -34,6 +34,9 @@ see more at [examples](/example/consumer.js)
 ## Roadmap
 
 - [x] Add proper logging debug?
+- [ ] Add pub/sub case (fanout)
+- [ ] Add timeline case
+- [ ] Improve docs
 - [ ] Handle unacked messages (CLAIM, PENDING)
 - [ ] Add linting
 - [ ] Add Tests

@@ -10,7 +10,7 @@ const groupName = 'mygroup'; // CONSUMER GROUP
 
     const group = await qstream.group(topicName, groupName);
     group.consume(async (data) => {
-        console.log({ data });
+        console.log(data);
         return true;
     });
 })();
