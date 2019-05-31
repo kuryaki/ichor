@@ -34,10 +34,10 @@ see more at [examples](/example/consumer.js)
 ## Roadmap
 
 - [x] Add proper logging debug?
+- [ ] Add linting
+- [ ] Add Tests
+- [ ] Add CI / CD
+- [ ] Handle unacked messages (CLAIM, PENDING)
 - [ ] Add pub/sub case (fanout)
 - [ ] Add timeline case
 - [ ] Improve docs
-- [ ] Handle unacked messages (CLAIM, PENDING)
-- [ ] Add linting
-- [ ] Add Tests
-- [ ] Add CI / CD (gtihub publishing)

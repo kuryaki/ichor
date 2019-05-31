@@ -11,14 +11,14 @@ let counter = 0;
 const complex = {
     hola: {
         text: 'world',
-        lang: 'en'
+        lang: undefined
     }
 };
 
 // producer
 setInterval(async () => {
 
-    const id = await qstream.publish(topic, { counter, complex });
+    const id = await qstream.publish(topic, { counter, complex }).catch(console.error);
 
     console.log({ counter, id });
 
