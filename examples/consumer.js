@@ -13,5 +13,5 @@ const groupName = 'agroup3'; // CONSUMER GROUP
 
         console.log(data);
         return true;
-    }).catch(console.error);
+    }, 10).catch(console.error);
 })();
