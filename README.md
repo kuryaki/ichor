@@ -94,4 +94,5 @@ DEBUG=qstream:* npm start
 - [ ] Handle unacked messages (CLAIM, PENDING)
 - [ ] Add pub/sub case (fanout)
 - [ ] Add timeline case
+- [ ] Add documentation for history rebuild
 - [ ] Improve docs
