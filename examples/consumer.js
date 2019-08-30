@@ -9,9 +9,9 @@ const groupName = 'agroup3'; // CONSUMER GROUP
 (async () => {
 
     const group = await qstream.group(topicName, groupName);
-    group.consume(async (data) => {
+    group.consume(async (data, id) => {
 
-        console.log(data);
+        console.log(data, id);
         return true;
     }, 10).catch(console.error);
 })();
